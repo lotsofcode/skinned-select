@@ -1,0 +1,58 @@
+
+  /************************************************************\
+  *
+  *    Skinned Select Box Copyright 2007 Derek Harvey
+  *		 www.lotsofcode.com
+  *
+  *    This file is part of Skinned Select Box .
+  *
+  *    Skinned Select Boxis free software; you can redistribute it and/or modify
+  *    it under the terms of the GNU General Public License as published by
+  *    the Free Software Foundation; either version 2 of the License, or
+  *    (at your option) any later version.
+  *
+  *    Skinned Select Box is distributed in the hope that it will be useful,
+  *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+  *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  *    GNU General Public License for more details.
+  *
+  *    You should have received a copy of the GNU General Public License
+  *    along with Skinned Select Box; if not, write to the Free Software
+  *    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+  *
+  \************************************************************/
+
+/* skinned select */
+
+div.skinned-select {
+	background: url('../images/skin.png') no-repeat scroll 0pt 100%;
+}
+div.skinned-select select {
+	opacity: 0;
+	filter: alpha(opacity = 0);
+	moz-opacity: 0;
+	position: relative;
+	z-index: 100;
+}
+div.skinned-select .select-text {
+  position: absolute;
+	text-indent: 10px;
+	line-height: 19px;
+	width: 150px;
+	z-index: 1;
+}
+div.skinned-select .select-text,
+div.skinned-select select,
+div.skinned-select select option {
+	width: 150px;
+	font-size: 11px;
+	color: #316D89;
+}
+
+/* non javascript version select */
+
+.my-skinnable-select select {
+  width: 150px;
+  font-size: 11px;
+  border: 1px solid #D5E6EE;
+}
