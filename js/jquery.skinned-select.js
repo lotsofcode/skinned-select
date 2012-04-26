@@ -9,7 +9,6 @@
             convertSelect() 
         }
         var convertSelect = function() {
-          console.log($element)
             selectContainer = $(element);
             selectContainer.removeClass(this.selector);
             selectContainer.addClass('skinned-select');
