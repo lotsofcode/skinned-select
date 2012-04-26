@@ -27,7 +27,7 @@
 
 /* default: non javascript version of select */
 
-.my-skinnable-select select {
+.my-skinned-select select {
   width: 150px;
   font-size: 11px;
   border: 1px solid #D5E6EE;
