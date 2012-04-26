@@ -1,5 +1,5 @@
 ;(function($, undefined) {
-    $.SelectSkin = function(element, options) {
+    $.skinnedSelect = function(element, options) {
         var defaults = {
           textClass : 'skinned-text',
           selectClass : 'skinned-select',
@@ -29,11 +29,11 @@
         }
         plugin.init();
     }
-    $.fn.SelectSkin = function(options) {
+    $.fn.skinnedSelect = function(options) {
         return this.each(function() {
-            if (undefined == $(this).data('SelectSkin')) {
-                var plugin = new $.SelectSkin(this, options);
-                $(this).data('SelectSkin', plugin);
+            if (undefined == $(this).data('skinnedSelect')) {
+                var plugin = new $.skinnedSelect(this, options);
+                $(this).data('skinnedSelect', plugin);
             }
         });
 
