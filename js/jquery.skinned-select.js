@@ -1,26 +1,36 @@
-$(document).ready(
-  function() {
-    $('.my-skinnable-select').each(
-      function(i) {
-        selectContainer = $(this);
-        // Remove the class for non JS browsers
-        selectContainer.removeClass('my-skinnable-select');
-        // Add the class for JS Browers
-        selectContainer.addClass('skinned-select');
-        // Find the select box
-        selectContainer.children().before('<div class="select-text">a</div>').each(
-          function() {
-            $(this).prev().text(this.options[0].innerHTML)
-          }
-        );
-        // Store the parent object
-        var parentTextObj = selectContainer.children().prev();
-        // As we click on the options
-        selectContainer.children().click(function() {
-          // Set the value of the html
-          parentTextObj.text(this.options[this.selectedIndex].innerHTML);
-        })        
-      }
-    );
-  }
-);
+;(function($, undefined) {
+    $.SelectSkin = function(element, options) {
+        var defaults = {}
+        var plugin = this;
+        plugin.settings = {}
+        var $element = $(element), element = element;
+        plugin.init = function() {
+            plugin.settings = $.extend({}, defaults, options);
+            convertSelect() 
+        }
+        var convertSelect = function() {
+          console.log($element)
+            selectContainer = $(element);
+            selectContainer.removeClass(this.selector);
+            selectContainer.addClass('skinned-select');
+            selectContainer.children().before('<div class="select-text">Text</div>').each(function() {
+                $(this).prev().text(this.options[0].innerHTML)
+              }
+            );
+            var parentTextObj = selectContainer.children().prev();
+            selectContainer.children().click(function() {
+              parentTextObj.text(this.options[this.selectedIndex].innerHTML);
+            })
+        }
+        plugin.init();
+    }
+    $.fn.SelectSkin = function(options) {
+        return this.each(function() {
+            if (undefined == $(this).data('SelectSkin')) {
+                var plugin = new $.SelectSkin(this, options);
+                $(this).data('SelectSkin', plugin);
+            }
+        });
+
+    }
+})(jQuery);
