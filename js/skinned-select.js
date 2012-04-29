@@ -31,7 +31,7 @@
         return parentTextObj.text($(':selected', this).html());
       });
     };
-    plugin.init();
+    return plugin.init();
   };
 
   $.fn.skinnedSelect = function(options) {
