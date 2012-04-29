@@ -19,12 +19,12 @@
             selectContainer.addClass(plugin.settings.selectClass);
 
             selectContainer.before('<div class="'+plugin.settings.textClass+'">Text</div>').each(function() {
-                $(this).prev().text(this.options[this.options.selectedIndex].innerHTML)
+                $(this).prev().text($(':selected', this).html())
               }
             );
             var parentTextObj = selectContainer.prev();
             selectContainer.click(function() {
-              parentTextObj.text(this.options[this.selectedIndex].innerHTML);
+              parentTextObj.text($(':selected', this).html());
             })
         }
         plugin.init();
