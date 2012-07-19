@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640" />
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>jQuery select box skin by lotsofcode</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/lotsofcode/skinned-select">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>jQuery select box skin</h1>
+            <h2>Apply a nice looking skin to a standard html select</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/lotsofcode/skinned-select/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/lotsofcode/skinned-select/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <h1>usage</h1>
+
+<ol>
+<li>Include required assets</li>
+</ol><pre><code>&lt;link rel="stylesheet" type="text/css" href="css/skinned-select.css"&gt;
+&lt;script src="js/skinned-select.js" type="text/javascript"&gt;&lt;/script&gt;
+</code></pre>
+
+<ol>
+<li>Add class to your select</li>
+</ol><pre><code>&lt;select name="name" class="my-skinned-select"&gt;
+    &lt;option value="1"&gt;One&lt;/option&gt;
+    &lt;option value="2"&gt;Two&lt;/option&gt;
+    &lt;option value="3"&gt;Three&lt;/option&gt;
+    &lt;option value="4"&gt;Four&lt;/option&gt;
+    &lt;option value="5"&gt;Five&lt;/option&gt;
+&lt;/select&gt;
+</code></pre>
+
+<ol>
+<li>Tell jQuery to make it pretty.</li>
+</ol><pre><code>&lt;script type="text/javascript"&gt;
+  $(document).ready(function() {
+    $('.my-skinned-select').skinnedSelect();
+  })
+&lt;/script&gt;
+</code></pre>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/lotsofcode">lotsofcode</a> can be found on <a href="https://github.com/lotsofcode/skinned-select">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-3968273-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
