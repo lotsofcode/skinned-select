@@ -18,7 +18,7 @@ $.skinnedSelect = (element, options) ->
         wrapper.before('<div class="'+plugin.settings.textClass+'">Text</div>').each ->
             $(this).prev().text $(':selected', this).html()
         parentTextObj = wrapper.prev();
-        wrapper.click( -> 
+        wrapper.change( -> 
           parentTextObj.text $(':selected', this).html();
         )
     plugin.init();
