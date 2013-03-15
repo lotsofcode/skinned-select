@@ -30,3 +30,7 @@ Overlays an image on-top of a select box.
 Modifications are to be made in js/skinned-select.coffee and compiled to js/skinned-select.js.
 
 Indentation style, size and encoding should be followed as per .editorconfig settings.
+
+## Contributors
+
+[@andrefy](https://github.com/andrefy)
