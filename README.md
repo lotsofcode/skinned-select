@@ -2,6 +2,8 @@
 
 Overlays an image on-top of a select box.
 
+@example src/index.html
+
 ## Include the required assets
 
     <link rel="stylesheet" type="text/css" href="css/skinned-select.css">
@@ -27,9 +29,25 @@ Overlays an image on-top of a select box.
 
 ## Submitting pull requests
 
-Modifications are to be made in js/skinned-select.coffee and compiled to js/skinned-select.js.
+Modifications are to be made in src/js/skinned-select.coffee and compiled to src/js/skinned-select.js.
 
 Indentation style, size and encoding should be followed as per .editorconfig settings.
+
+If you are not familiar with editorconfig, check out [editorconfig.org](http://editorconfig.org/#download) to see if your editor has a plugin available.
+
+### Development
+
+I'm now using grunt to compile .coffee to .js and also for the live reload support available.
+
+If you'd like to use this workflow to make changes, install the dependencies.
+
+    $ npm install
+
+Then run the local server
+
+    $ grunt
+
+Nice and simple ;)
 
 ## Contributors
 
